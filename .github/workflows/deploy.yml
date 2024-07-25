@@ -2,9 +2,9 @@ on:
   push:
     branches:
       - main
-Pull_request:
+  Pull_request:
     Branches:
-       -main
+      - main
       
 jobs:
   build:
