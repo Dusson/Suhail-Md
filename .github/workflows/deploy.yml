@@ -1,9 +1,10 @@
-name: Node.js CI
-
 on:
   push:
     branches:
       - main
+Pull_request:
+    Branches:
+       -main
       
 jobs:
   build:
@@ -23,14 +24,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Install libraries
+    - name: Install dependencies 
       run: npm install
 
-    - name: Start Suhail-Md
-    
-      env:
-          OWNER_NAME: 
-          OWNER_NUMBER:
-          SESSION_ID:
-
-      run: npm start
+    - name: Start application
+       run: npm start
