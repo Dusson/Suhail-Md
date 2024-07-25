@@ -1,10 +1,11 @@
+
 on:
   push:
     branches:
       - main
-  Pull_request:
-    Branches:
-      - main
+Pull_request:
+  Branches:
+    - main
       
 jobs:
   build:
